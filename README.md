@@ -1,19 +1,19 @@
 # Task Manager
 
-Gulp
+For minify css file i used Gulp
 
 # CSS framework
 
-  bootstrap
+  Bootstrap is the best grid system for me
   
 # Prepocessor
 
-  sass
+  For css superpower i used sass
 
 # Animations
 
-  animate.css
+  A little animation on submit button with animate.css
 
 # Form validation
 
-  parsley.js
+ For an easy and fast form validation i used parsley.js
