@@ -1,0 +1,90 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="pixel2html frontend test">
+    <meta name="author" content="Alice Perez">
+  	<title>SignIn</title>
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  	<link href='https://fonts.googleapis.com/css?family=Lato:400,700,300' rel='stylesheet' type='text/css'>
+    <link href="css/style.min.css" rel="stylesheet">
+    <script src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/parsley.js"></script>
+
+   </head>
+ 
+  <body>
+    <div class="container">
+     <form class="form-signin" id="demo-form" data-parsley-validate>
+      <div class="row">
+         <div class="col-md-12">
+            <div class="header-Container">
+              <div class="header-Img"><img src="image/logo.svg"></div>
+              <div class="header-Text">
+                <p class="header-PrimaryText">Create new account</p>
+                <p class="header-SecundaryText">Enter your credentials bellow</p>
+              </div>
+            </div>
+          </div>
+       </div>
+       <div class="main">  
+          <div class="col-md-7">
+            <div class="form-group">
+              <label for="">Full name</label>
+              <input type="text" class="form-control" placeholder="Name and surname" required="" data-required="true">
+            </div>
+          </div>
+          <div class="col-md-5">
+            <div class="form-group">
+              <label for="">Username</label>
+              <input type="text" class="form-control" placeholder="Username" required="" data-required="true">
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="form-group">
+              <label for="">Email address</label>
+              <input type="email"  class="form-control" data-parsley-type="email" data-parsley-trigger="change" required="" placeholder="Email address">
+            </div>
+          </div>
+          <div class="col-md-7">
+            <div class="form-group">
+              <label for="">Country</label>
+              <input type="text" class="form-control" placeholder="Country" required="" data-required="true">
+            </div>
+          </div>
+          <div class="col-md-5">
+            <div class="form-group">
+              <label for="">City</label>
+              <input type="text" class="form-control"  placeholder="City" required="" data-required="true">
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="form-group">
+              <label for="">Password</label>
+              <input type="password" class="form-control" placeholder="Password" required="" data-required="true" >
+              <input type="password" class="form-control repeatPass"  placeholder="Repeat password" required="" data-required="true" >
+            </div>
+          </div>
+            <div class="checkbox col-md-12">
+              <label class="text-Little">
+                <input type="checkbox"> I accepted the <a href="">Terms & conditions</a>
+              </label>
+              <button type="submit" class="btn button" id="submit" >Create account</button>
+            </div>
+            <div class="col-md-12 signin-">
+                <p class="center text-Little">Have account already? <a href="">Sign in</a></p>
+            </div>
+        </form>
+           <span class="clearfix"></span>  
+        </div>
+        <div class="col-md-12 signin">
+            <p class="center text-Little">Have account already? <a href="">Sign in</a></p>
+        </div>
+    </div> 
+  </body>
+  <script type="text/javascript">
+      $('#submit').click(function(){
+        $(this).addClass("animated pulse");
+      });
+  </script>
+
